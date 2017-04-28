@@ -21,11 +21,16 @@ The data is a CSV with emoticons removed. Data file format has 6 fields:
 In this project, we parse the CSV file to use pure tweet text(field 5th).
 
 ## How to use
-1. Import this project in your IDE
+1. Import this project in your IDE.
+
 2. Copy the property file inside the **config** folder into **src** folder as a running parameter. We use the setting under linux system with 1,000,000 tweets by default.
+
 3. Before building index, you should preprocess the source file by run **Preprocessing.java** under **src\dist\main**. Noticed that the source file path needs to be passed as an arguement.
+
 4. Run **PlaintextSetup.java** to setup plaintext index and run **PlaintextSearch.java** to search.
+
 5. Run **IndexSetup.java** to setup EncSIM index. Run **IndexSearch.java** to search a single query and **IndexSearchBatch.java** to search a set of queries. Run **IndexInsertion.java** to add new records into index.
+
 6. Run **LshSSESetup.java** to setup baseline index and run **LshSSESetup.java** to search.
 
 If you have any enquiries, please contact Maggie LIU via xiaoning.trust@gmail.com. Thanks.
